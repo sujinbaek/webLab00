@@ -57,11 +57,11 @@
                 $resultArray = array();
 //                implement here.
                 shuffle($listOfCourses);
-                foreach ($listOfCourses as $courseItem) {
+                $tmpArray = array_slice($listOfCourses, 0, $numberOfCourses);
+                foreach ($tmpArray as $courseItem) {
                     $item = explode("\t", $courseItem);
                     $resultArray[] = $item[0] . " - " . $item[1];
                 }
-                $resultArray = array_slice($resultArray, 0, $numberOfCourses);
                 return $resultArray;
             }
         ?>
