@@ -1,0 +1,318 @@
+/* 백수진 2010036262 */
+
+body {
+	font-family: brown, verdana, "sans-serif";
+	margin: 0px;
+	padding: 0px;
+}
+
+body > div, header > div {
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-color: black;
+	color: white;
+	overflow: hidden;
+}
+
+header div div {
+	float: left;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-right: 30px;
+}
+
+header div div:hover {
+	color: #1cace2;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+#music-festivals {
+	color: #ff6567;
+	padding-right: 0px;
+	float: right;
+}
+
+#brand {
+	padding-top: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+#brand a img {
+	width: 300px;
+	height: 62px;
+}
+
+#brand div {
+	margin-top: 45px;
+	float: right;
+}
+
+#brand div a {
+	text-decoration: none;
+}
+
+nav div {
+	float: left;
+	border: 1px solid #D9D9D8;
+}
+
+nav div:nth-child(n+2) {
+	border-left: 1px solid transparent;
+}
+
+nav div:not(#search-wrap) {
+	padding-top: 0.65em;
+	padding-bottom: 0.65em;
+	padding-left: 0.72em;
+	padding-right: 0.72em;
+}
+
+nav div:not(#search-wrap):hover {
+	border: 2px solid black;
+	margin: -1px;
+	margin-left: -1px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#weekbar {
+	background-color: black;
+	text-align: center;
+	color: white;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+#weekbar div {
+	margin-top : 10px;
+	margin-left : 10px;
+}
+
+#weekbar div div .fa {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 50%;
+	font-size: 1.25em;
+	float: left;
+}
+
+#weekbar .fa-facebook {
+	background-color: #3b5998;
+}
+
+#weekbar .fa-twitter {
+	background-color: #55acee;
+	margin-left: 0.25em;
+}
+
+aside {
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 300px;
+	float: right;
+}
+
+#chart-header {
+	background-color: #484647;
+	padding: 0.75em;
+	text-align: left;
+}
+
+#chart-header i {
+	color: black;
+}
+
+aside > div > div {
+	height: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #989898;
+}
+
+aside div div div:first-child {
+	color: #989898;
+	padding: 1em;
+	text-align: left;
+}
+
+aside div div div:first-child ~ div {
+	float: left;
+}
+
+aside div div div:nth-child(2) {
+ 	width: 45px;
+ 	font-size: 2em;
+ 	margin-top: 6px;
+ 	text-align: center;
+}
+
+aside div div div img {
+ 	width: 2.5em;
+ 	height: 2.5em;
+ 	margin: 6px;
+ 	float: left;
+}
+
+aside div div div p {
+ 	width: 192px;
+ 	margin: 0px;
+}
+
+aside div div div p span {
+ 	display: block;
+}
+
+aside div div div p span:first-child {
+	font-size: 1em;
+}
+
+aside div div div p span:last-child {
+	font-size: 12px;
+	color: #1cace2;
+}
+
+aside div div div:last-child {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border: 2px solid white;
+	border-radius: 50%;
+	font-size: 15px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+article {
+ 	overflow: hidden;
+ 	margin-top: 10px;
+}
+
+article>div {
+ 	height: 104px;
+ 	border-top: 1px solid #CDCDCD;
+ 	border-bottom-color: white;
+ 	overflow: hidden;
+}
+
+article>div:hover {
+ 	border-color: black;
+}
+
+article div div {
+ 	float: left;
+}
+
+article div div:first-child {
+ 	width: 34px;
+ 	line-height: 104px;
+ 	text-align: center;
+ 	color: #8c8e90;
+ 	background-color: rgb(231, 231, 231);
+}
+
+.fa-arrow-up {
+ 	color: #05c648;
+}
+
+.fa-arrow-down {
+ 	color: #f93c33;
+}
+
+article div div:nth-child(2) {
+ 	width: 100px;
+ 	margin-top: 10px;
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+ 	text-align: center;
+}
+
+article div div:nth-child(2) span {
+ 	display: block;
+}
+
+article div div:nth-child(2) span:first-child {
+	font-size: 62px;
+	text-align: center;
+}
+
+article div div:nth-child(2) span:last-child {
+	font-size: 12.4px;
+	color: #989898;
+	line-height: 1;
+}
+
+article div div:nth-child(3)>:nth-child(n) {
+	float: left;
+}
+
+article div div:nth-child(3) img {
+ 	margin-top: 6px;
+ 	margin-bottom: 6px;
+ 	margin-right: 12px;
+ 	width: 91px;
+ 	height: 91px;
+}
+
+article div div:nth-child(3) p span {
+	display: block;
+}
+
+article div div:nth-child(3) p span:first-child {
+	font-size: 24px;
+}
+
+article div div:nth-child(3) p span:last-child {
+	font-size: 16px;
+	color: #1cace2;
+}
+
+article div div:last-child {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border: 2px solid black;
+	border-radius: 50%;
+	font-size: 15px;
+	margin-top: 15px;
+	margin-right: 10px;
+	text-align: center;
+	float: right;
+}
+
+footer {
+	background-color: black;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-right: 11px;
+}
+
+footer div {
+	text-align: right;
+}
+
+.fa-play:hover {
+	color: #1cace2;
+	cursor: pointer;
+}
+
+article div div:nth-child(3) p span:last-child:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+
