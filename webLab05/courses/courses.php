@@ -30,7 +30,7 @@
             $startCharacter = $_GET["character"];
         }
         if(empty($startCharacter)) {
-            $numberOfCourses = 'C';
+            $startCharacter = 'C';
         }
 
         $orderby = 0;
@@ -38,7 +38,7 @@
             $orderby = $_GET["orderby"];
         }
         if(empty($orderby)) {
-            $numberOfCourses = 0;
+            $orderby = 0;
         }
 
         ?>
