@@ -103,7 +103,9 @@ function startToCatch(){
 				}
 			}
 			else if(this.hasClassName("trap")){
-				sc = Number(sc) - 30;
+				if(Number(sc) >= 30){
+					sc = Number(sc) - 30;
+				}
 				this.removeClassName("trap");
 			}
 			$("score").innerHTML = sc;
