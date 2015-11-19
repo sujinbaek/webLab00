@@ -15,7 +15,7 @@ document.observe('dom:loaded', function(){
 		clearInterval(targetTimer);
 		clearInterval(trapTimer);
 		clearInterval(instantTimer);
-		instantTimer = setInterval(startGame, 3000);
+		setTimeout(startGame, 3000);
 	});
 	$("stop").observe("click", stopGame);
 });
@@ -23,9 +23,6 @@ document.observe('dom:loaded', function(){
 function startGame(){
 	targetBlocks = [];
 	trapBlock = null;
-	clearInterval(targetTimer);
-	clearInterval(trapTimer);
-	clearInterval(instantTimer);
 
 	var block = $$(".block");
 	for(var i=0; i<block.length; i++) {
