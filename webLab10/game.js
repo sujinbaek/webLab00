@@ -83,9 +83,10 @@ function startToCatch(){
 	for (var i = 0; i < block.length; i++) {
 		block[i].observe("click", function(){
 			var sc = $("score").innerHTML;
+			sc = Number(sc);
 			if(!this.hasClassName("target") && !this.hasClassName("trap")){
-				if(Number(sc) >= 10){
-					sc = Number(sc) - 10;
+				if(sc >= 10){
+					sc = sc - 10;
 				}
 				this.addClassName("wrong");
 				var ob = this;
@@ -94,7 +95,7 @@ function startToCatch(){
 				}, 100);
 			}
 			else if(this.hasClassName("target")){
-				sc = Number(sc) + 20;
+				sc = sc + 20;
 				this.removeClassName("target");
 				for(var i=0; i<targetBlocks.length; i++){
 					if(this == targetBlocks[i]) {
@@ -103,8 +104,9 @@ function startToCatch(){
 				}
 			}
 			else if(this.hasClassName("trap")){
-				if(Number(sc) >= 30){
-					sc = Number(sc) - 30;
+				sc = sc - 30;
+				if(sc < 0){
+					sc = 0;
 				}
 				this.removeClassName("trap");
 			}
