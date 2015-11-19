@@ -61,9 +61,6 @@ function startToCatch(){
 		block[ran1].addClassName("target");
 
 		if(targetBlocks.length > 4) {
-			clearInterval(targetTimer);
-			clearInterval(trapTimer);
-			clearInterval(instantTimer);
 			alert("you lose");
 			stopGame();
 		}
