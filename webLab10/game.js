@@ -85,8 +85,9 @@ function startToCatch(){
 			var sc = $("score").innerHTML;
 			sc = Number(sc);
 			if(!this.hasClassName("target") && !this.hasClassName("trap")){
-				if(sc >= 10){
-					sc = sc - 10;
+				sc = sc - 10;
+				if(sc < 0){
+					sc = 0;
 				}
 				this.addClassName("wrong");
 				var ob = this;
